@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    
+    <script>
+
+       // console.log("Hello, World!")
+         let rock = 0;
+        let paper = 0;
+        let scissors = 0;
+
+
+
+        function getComputerChoice()
+        {
+            let i = Math.floor(Math.random() * 3);
+            if(i === 0)
+              {
+                rock++;
+                return "rock";
+              }
+              else if(i === 1){
+                paper++;
+                return "paper";
+              }
+              else{
+                scissors++;
+                return "scissors";
+              }
+        }
+        function getHumanChoice(){
+            prompt("Please enter either 'rock', 'paper', or 'scissors': ");
+
+        }
+       
+
+    //     for(i = 0; i < 10000; i++)
+    // {
+    //    getComputerChoice();
+    // }
+
+    // console.log("Number of rocks: " + rock);
+    // console.log("Number of paper: " + paper);
+    // console.log("Number of scissors: " + scissors);
+
+
+        getHumanChoice();
+
+
+    </script>
+
+
+
+</body>
+</html>
